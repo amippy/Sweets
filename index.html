@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Which one do u like?</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/images.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/wow.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+
+
+</head>
+<body>
+  <!-- Content 1st -->
+    <div class="wrapper kinoko-bg">
+    </div>
+    <div class="snack_name">
+      <h2>きのこの山</h2>
+      <div class="feature_1 wow fadeIn" data-wow-duration="1.1s">
+        <i class="fa fa-heart wow fadeIn" aria-hidden="true"></i>
+        <h3>昔ながらの味</h3>
+        <p>販売されて４０年</p>
+      </div>
+      <div class="feature_2 wow fadeIn" data-wow-delay="1.2s" >
+        <i class="fa fa-heart wow fadeIn" aria-hidden="true"></i>
+        <h3>Wちょこ</h3>
+        <p>ミルクチョコレートとビターチョコレート</p>
+      </div>
+      <div class="feature_3 wow fadeIn" data-wow-delay="1.3s">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>やったね</h3>
+        <p>アメリカではたけのこの里より人気！</p>
+      </div>
+    </div>
+
+    <div class="wrapper takenoko-bg">
+    </div>
+
+    <div class="snack_name2">
+      <h2>たけのこの里</h2>
+      <div class="feature_1 wow fadeIn" data-wow-duration="1s">
+        <i class="fa fa-heart wow fadeIn" data-wow-duration="1s" aria-hidden="true"></i>
+        <h3>グッド</h3>
+        <p>きのこの山よりちょっぴり人気！</p>
+      </div>
+      <div class="feature_2 wow fadeIn" data-wow-duration="2s" >
+        <i class="fa fa-heart wow fadeIn" data-wow-duration="2s"aria-hidden="true"></i>
+        <h3>Wちょこ</h3>
+        <p>ミルクチョコレートとビターチョコレート</p>
+      </div>
+      <div class="feature_3 wow fadeIn" data-wow-duration="3s">
+        <i class="fa fa-heart wow fadeIn" data-wow-duration="3s" aria-hidden="true"></i>
+        <h3 >う〜ん</h3>
+        <p>きのこの山より内容量が少なめ</p>
+      </div>
+    </div>
+    <div class="select">
+      <h1 id="hide_text">君はどっちが<span id="suki">スキ</span>？</h1>
+      <button id="btn1">きのこの山</button>
+      <button id="btn2">たけのこの山</button>
+    </div>
+
+  <!-- Contents2 きのこ選択  -->
+  <section class="kinoko">
+
+    <div class="wrapper pockey-bg">
+    </div>
+    <div class="snack_name">
+      <h2>ポッキー</h2>
+      <div class="feature_1" id="show1">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>コクのあるチョコ</h3>
+        <p>ぺろぺろしたなるネ！</p>
+      </div>
+      <div class="feature_2" id="show2">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>知らんかった</h3>
+        <p>チョコにアロマが入っている</p>
+      </div>
+      <div class="feature_3" id="show3">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>恋よこいこい</h3>
+        <p>ポッキーゲームで恋！</p>
+      </div>
+    </div>
+
+    <div class="wrapper toppo-bg">
+    </div>
+
+    <div class="snack_name2">
+      <h2>トッポ</h2>
+      <div class="feature_1" id="show4">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>たっぷり</h3>
+        <p>ポッキーと違ってぷりぷりちょこイッパイ</p>
+      </div>
+      <div class="feature_2" id="show5">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>香ばしい</h3>
+        <p>サックサクなプレッツェル！</p>
+      </div>
+      <div class="feature_3" id="show6">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>あ〜</h3>
+        <p>やっぱこれだね〜。ロッテの・・・♪</p>
+      </div>
+    </div>
+    <div class="select" >
+      <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+      <button id="btn3">ポッキー</button>
+      <button id="btn4">トッポ</button>
+    </div>
+  </section>
+
+  <!-- Contents たけのこ選択 -->
+  <section class="takenoko">
+
+    <div class="wrapper jagariko-bg">
+    </div>
+    <div class="snack_name">
+      <h2>じゃがりこ</h2>
+      <div class="feature_1" id="show1">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>とまらない！</h3>
+        <p>ジャガジャガリコリコジャガリコ</p>
+      </div>
+      <div class="feature_2" id="show2">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>独自の製法</h3>
+        <p>カリッとサクサク！！</p>
+      </div>
+      <div class="feature_3" id="show3">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>看板商品</h3>
+        <p>年商２５０億円を超えるカルビーさん</p>
+      </div>
+    </div>
+
+    <div class="wrapper jagabee-bg">
+    </div>
+
+    <div class="snack_name2">
+      <h2>じゃがビー</h2>
+      <div class="feature_1" id="show4">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>新食感</h3>
+        <p>サクサク・ホクホク・サクホクホク</p>
+      </div>
+      <div class="feature_2" id="show5">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>そのまんま</h3>
+        <p>皮付きポテトを丸ごとカット</p>
+      </div>
+      <div class="feature_3" id="show6">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>なんだろ・・・</h3>
+        <p>じゃがポックルと似てるよね！？</p>
+      </div>
+    </div>
+    <div class="select">
+      <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+      <button id="btn5">じゃがりこ</button>
+      <button id="btn6">ジャガビー</button>
+    </div>
+  </section>
+
+  <!-- contents ポッキー選択 -->
+
+  <section class="pockey">
+
+    <div class="wrapper chipstar-bg">
+    </div>
+    <div class="snack_name">
+      <h2>チップスター</h2>
+      <div class="feature_1" id="show1">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>ロングセラー</h3>
+        <p>愛され続けて４０年</p>
+      </div>
+      <div class="feature_2" id="show2">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>美味しさ充満</h3>
+        <p>塩味と食感が口の中に広がる</p>
+      </div>
+      <div class="feature_3" id="show3">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>おNEW</h3>
+        <p>日本初の成形ぽてち</p>
+      </div>
+    </div>
+
+    <div class="wrapper pringles-bg">
+    </div>
+
+    <div class="snack_name2">
+      <h2>プリングルス</h2>
+      <div class="feature_1" id="show4">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>ワールドワイド</h3>
+        <p>１４０ヵ国以上で販売中</p>
+      </div>
+      <div class="feature_2" id="show5">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>キャッチフレーズ</h3>
+        <p>開けたら最後。You can't stop.</p>
+      </div>
+      <div class="feature_3" id="show6">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>とにかく</h3>
+        <p>味が濃く内容量も多い！</p>
+      </div>
+    </div>
+    <div class="select">
+      <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+      <button id="btn7">チップスター</button>
+      <button id="btn8">プリングルス</button>
+    </div>
+  </section>
+
+  <!-- トッポ選択　-->
+
+  <section class="toppo">
+
+    <div class="wrapper calbee-usushio">
+    </div>
+    <div class="snack_name">
+      <h2>カルビー　うすしお味</h2>
+      <div class="feature_1" id="show1">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>チップスター</h3>
+        <p>販売されて４０年</p>
+      </div>
+      <div class="feature_2" id="show2">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>Wちょこ</h3>
+        <p>じゃがりこ</p>
+      </div>
+      <div class="feature_3" id="show3">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>やったね</h3>
+        <p>アメリカではたけのこの里より人気！</p>
+      </div>
+    </div>
+
+    <div class="wrapper koikeya-usushio">
+    </div>
+
+    <div class="snack_name2">
+      <h2>コイケヤ　うすしお味</h2>
+      <div class="feature_1" id="show4">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>プリングルス</h3>
+        <p>プリングルス</p>
+      </div>
+      <div class="feature_2" id="show5">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>Wちょこ</h3>
+        <p>ミルクチョコレートとビターチョコレート</p>
+      </div>
+      <div class="feature_3" id="show6">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <h3>う〜ん</h3>
+        <p>きのこの山より内容量が少なめ</p>
+      </div>
+    </div>
+    <div class="select">
+      <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+      <button id="btn9">カルビー</button>
+      <button id="btn10">コイケヤ</button>
+    </div>
+  </section>
+
+  <!-- じゃがりこ　-->
+
+    <section class="jagariko">
+
+      <div class="wrapper amond-bg">
+      </div>
+      <div class="snack_name">
+        <h2>アーモンドチョコ</h2>
+        <div class="feature_1" id="show1">
+          <i class="fa fa-heart" aria-hidden="true"></i>
+          <h3>アーモンド</h3>
+          <p>販売されて４０年</p>
+        </div>
+        <div class="feature_2" id="show2">
+          <i class="fa fa-heart" aria-hidden="true"></i>
+          <h3>Wちょこ</h3>
+          <p>じゃがりこ</p>
+        </div>
+        <div class="feature_3" id="show3">
+          <i class="fa fa-heart" aria-hidden="true"></i>
+          <h3>やったね</h3>
+          <p>アメリカではたけのこの里より人気！</p>
+        </div>
+      </div>
+
+      <div class="wrapper makadamia-bg">
+      </div>
+
+      <div class="snack_name2">
+        <h2>マカダミアナッツチョコ</h2>
+        <div class="feature_1" id="show4">
+          <i class="fa fa-heart" aria-hidden="true"></i>
+          <h3>アーモンド</h3>
+          <p>プリングルス</p>
+        </div>
+        <div class="feature_2" id="show5">
+          <i class="fa fa-heart" aria-hidden="true"></i>
+          <h3>Wちょこ</h3>
+          <p>ミルクチョコレートとビターチョコレート</p>
+        </div>
+        <div class="feature_3" id="show6">
+          <i class="fa fa-heart" aria-hidden="true"></i>
+          <h3>う〜ん</h3>
+          <p>きのこの山より内容量が少なめ</p>
+        </div>
+      </div>
+      <div class="select">
+        <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+        <button id="btn11">アーモンドチョコ</button>
+        <button id="btn12">マカダミアナッツ</button>
+      </div>
+    </section>
+
+    <!-- ジャガビー　-->
+
+        <section class="jagabee">
+
+          <div class="wrapper apolo-bg">
+          </div>
+          <div class="snack_name">
+            <h2>アポロチョコ</h2>
+            <div class="feature_1" id="show1">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>アポロチョコ</h3>
+              <p>販売されて４０年</p>
+            </div>
+            <div class="feature_2" id="show2">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>じゃがりこ</p>
+            </div>
+            <div class="feature_3" id="show3">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>やったね</h3>
+              <p>アメリカではたけのこの里より人気！</p>
+            </div>
+          </div>
+
+          <div class="wrapper marble-bg">
+          </div>
+
+          <div class="snack_name2">
+            <h2>マーブルチョコ</h2>
+            <div class="feature_1" id="show4">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>まーぶるちょも</h3>
+              <p>プリングルス</p>
+            </div>
+            <div class="feature_2" id="show5">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>ミルクチョコレートとビターチョコレート</p>
+            </div>
+            <div class="feature_3" id="show6">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>う〜ん</h3>
+              <p>きのこの山より内容量が少なめ</p>
+            </div>
+          </div>
+          <div class="select">
+            <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+            <button id="btn13">アポロチョコ</button>
+            <button id="btn14">マーブルチョコ</button>
+          </div>
+        </section>
+
+        <!-- チップスタ選択 -->
+        <section class="chipstar">
+
+          <div class="wrapper gyaba-bg">
+          </div>
+          <div class="snack_name">
+            <h2>GABA</h2>
+            <div class="feature_1" id="show1">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>アポロチョコ</h3>
+              <p>販売されて４０年</p>
+            </div>
+            <div class="feature_2" id="show2">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>じゃがりこ</p>
+            </div>
+            <div class="feature_3" id="show3">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>やったね</h3>
+              <p>アメリカではたけのこの里より人気！</p>
+            </div>
+          </div>
+
+          <div class="wrapper chokoball-bg">
+          </div>
+
+          <div class="snack_name2">
+            <h2>チョコボール</h2>
+            <div class="feature_1" id="show4">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>まーぶるちょも</h3>
+              <p>チョコボール</p>
+            </div>
+            <div class="feature_2" id="show5">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>ミルクチョコレートとビターチョコレート</p>
+            </div>
+            <div class="feature_3" id="show6">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>う〜ん</h3>
+              <p>きのこの山より内容量が少なめ</p>
+            </div>
+          </div>
+          <div class="select">
+            <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+            <button id="btn15">GABA</button>
+            <button id="btn16">チョコボール</button>
+          </div>
+        </section>
+
+        <!-- プリングルス　-->
+        <section class="pringles">
+
+          <div class="wrapper koara-bg">
+          </div>
+          <div class="snack_name">
+            <h2>コアラのマーチ</h2>
+            <div class="feature_1" id="show1">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>アポロチョコ</h3>
+              <p>販売されて４０年</p>
+            </div>
+            <div class="feature_2" id="show2">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>じゃがりこ</p>
+            </div>
+            <div class="feature_3" id="show3">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>やったね</h3>
+              <p>アメリカではたけのこの里より人気！</p>
+            </div>
+          </div>
+
+          <div class="wrapper pacho-bg">
+          </div>
+
+          <div class="snack_name2">
+            <h2>パックンチョ</h2>
+            <div class="feature_1" id="show4">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>まーぶるちょも</h3>
+              <p>チョコボール</p>
+            </div>
+            <div class="feature_2" id="show5">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>ミルクチョコレートとビターチョコレート</p>
+            </div>
+            <div class="feature_3" id="show6">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>う〜ん</h3>
+              <p>きのこの山より内容量が少なめ</p>
+            </div>
+          </div>
+          <div class="select">
+            <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+            <button id="btn17">コアラのマーチ</button>
+            <button id="btn18">パックンチョ</button>
+          </div>
+        </section>
+
+        <!-- カルビー　-->
+        <section class="calbee">
+
+          <div class="wrapper alphoto-bg">
+          </div>
+          <div class="snack_name">
+            <h2>アルフォート</h2>
+            <div class="feature_1" id="show1">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>アポロチョコ</h3>
+              <p>販売されて４０年</p>
+            </div>
+            <div class="feature_2" id="show2">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>じゃがりこ</p>
+            </div>
+            <div class="feature_3" id="show3">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>やったね</h3>
+              <p>アメリカではたけのこの里より人気！</p>
+            </div>
+          </div>
+
+          <div class="wrapper branchu-bg">
+          </div>
+
+          <div class="snack_name2">
+            <h2>ブランチュール</h2>
+            <div class="feature_1" id="show4">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>まーぶるちょも</h3>
+              <p>チョコボール</p>
+            </div>
+            <div class="feature_2" id="show5">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>ミルクチョコレートとビターチョコレート</p>
+            </div>
+            <div class="feature_3" id="show6">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>う〜ん</h3>
+              <p>きのこの山より内容量が少なめ</p>
+            </div>
+          </div>
+          <div class="select">
+            <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+            <button id="btn19">アルフォート</button>
+            <button id="btn20">ブランチュール</button>
+          </div>
+        </section>
+
+        <!-- コイケヤ -->
+
+        <section class="koikeya">
+
+          <div class="wrapper galbo-bg">
+          </div>
+          <div class="snack_name">
+            <h2>galbo</h2>
+            <div class="feature_1" id="show1">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>アポロチョコ</h3>
+              <p>販売されて４０年</p>
+            </div>
+            <div class="feature_2" id="show2">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>じゃがりこ</p>
+            </div>
+            <div class="feature_3" id="show3">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>やったね</h3>
+              <p>アメリカではたけのこの里より人気！</p>
+            </div>
+          </div>
+
+          <div class="wrapper bake-bg">
+          </div>
+
+          <div class="snack_name2">
+            <h2>BAKE</h2>
+            <div class="feature_1" id="show4">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>まーぶるちょも</h3>
+              <p>チョコボール</p>
+            </div>
+            <div class="feature_2" id="show5">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>ミルクチョコレートとビターチョコレート</p>
+            </div>
+            <div class="feature_3" id="show6">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>う〜ん</h3>
+              <p>きのこの山より内容量が少なめ</p>
+            </div>
+          </div>
+          <div class="select">
+            <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+            <button id="btn21">アルフォート</button>
+            <button id="btn22">ブランチュール</button>
+          </div>
+        </section>
+
+        <!-- アーモンド選択 -->
+        <section class="almond">
+
+          <div class="wrapper kappaebi-bg">
+          </div>
+          <div class="snack_name">
+            <h2>かっぱえびせん</h2>
+            <div class="feature_1" id="show1">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>アポロチョコ</h3>
+              <p>販売されて４０年</p>
+            </div>
+            <div class="feature_2" id="show2">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>じゃがりこ</p>
+            </div>
+            <div class="feature_3" id="show3">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>やったね</h3>
+              <p>アメリカではたけのこの里より人気！</p>
+            </div>
+          </div>
+
+          <div class="wrapper caru-bg">
+          </div>
+
+          <div class="snack_name2">
+            <h2>カール</h2>
+            <div class="feature_1" id="show4">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>まーぶるちょも</h3>
+              <p>チョコボール</p>
+            </div>
+            <div class="feature_2" id="show5">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>ミルクチョコレートとビターチョコレート</p>
+            </div>
+            <div class="feature_3" id="show6">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>う〜ん</h3>
+              <p>きのこの山より内容量が少なめ</p>
+            </div>
+          </div>
+          <div class="select">
+            <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+            <button id="btn23">かっぱえびせん</button>
+            <button id="btn24">カール</button>
+          </div>
+        </section>
+
+        <!-- マカダミア選択 -->
+        <section class="macadamia">
+
+          <div class="wrapper sapporo_bbq-bg">
+          </div>
+          <div class="snack_name">
+            <h2>サッポロポテトバーべQあじ</h2>
+            <div class="feature_1" id="show1">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>アポロチョコ</h3>
+              <p>販売されて４０年</p>
+            </div>
+            <div class="feature_2" id="show2">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>じゃがりこ</p>
+            </div>
+            <div class="feature_3" id="show3">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>やったね</h3>
+              <p>アメリカではたけのこの里より人気！</p>
+            </div>
+          </div>
+
+          <div class="wrapper sapporo_vesi-bg">
+          </div>
+
+          <div class="snack_name2">
+            <h2>サッポロポテト<br>つぶつぶベジタブル</h2>
+            <div class="feature_1" id="show4">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>まーぶるちょも</h3>
+              <p>チョコボール</p>
+            </div>
+            <div class="feature_2" id="show5">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>ミルクチョコレートとビターチョコレート</p>
+            </div>
+            <div class="feature_3" id="show6">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>う〜ん</h3>
+              <p>きのこの山より内容量が少なめ</p>
+            </div>
+          </div>
+          <div class="select">
+            <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+            <button id="btn25">バーべQ味</button>
+            <button id="btn26">ベジタブル味</button>
+          </div>
+        </section>
+
+        <!-- アポロチョコ -->
+        <section class="apolo">
+
+          <div class="wrapper bisco-bg">
+          </div>
+          <div class="snack_name">
+            <h2>ビスコ</h2>
+            <div class="feature_1" id="show1">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>アポロチョコ</h3>
+              <p>販売されて４０年</p>
+            </div>
+            <div class="feature_2" id="show2">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>じゃがりこ</p>
+            </div>
+            <div class="feature_3" id="show3">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>やったね</h3>
+              <p>アメリカではたけのこの里より人気！</p>
+            </div>
+          </div>
+
+          <div class="wrapper animal-bg">
+          </div>
+
+          <div class="snack_name2">
+            <h2>たべっ子どうぶつ</h2>
+            <div class="feature_1" id="show4">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>まーぶるちょも</h3>
+              <p>チョコボール</p>
+            </div>
+            <div class="feature_2" id="show5">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>ミルクチョコレートとビターチョコレート</p>
+            </div>
+            <div class="feature_3" id="show6">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>う〜ん</h3>
+              <p>きのこの山より内容量が少なめ</p>
+            </div>
+          </div>
+          <div class="select">
+            <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+            <button id="btn27">ビスコ</button>
+            <button id="btn28">たべっ子どうぶつ</button>
+          </div>
+        </section>
+
+        <!-- マーブル選択 -->
+        <section class="marble">
+
+          <div class="wrapper black_thunder-bg">
+          </div>
+          <div class="snack_name">
+            <h2>ブラックサンダー</h2>
+            <div class="feature_1" id="show1">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>アポロチョコ</h3>
+              <p>販売されて４０年</p>
+            </div>
+            <div class="feature_2" id="show2">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>じゃがりこ</p>
+            </div>
+            <div class="feature_3" id="show3">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>やったね</h3>
+              <p>アメリカではたけのこの里より人気！</p>
+            </div>
+          </div>
+
+          <div class="wrapper snickers-bg">
+          </div>
+
+          <div class="snack_name2">
+            <h2>スニッカーズ</h2>
+            <div class="feature_1" id="show4">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>まーぶるちょも</h3>
+              <p>チョコボール</p>
+            </div>
+            <div class="feature_2" id="show5">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>Wちょこ</h3>
+              <p>ミルクチョコレートとビターチョコレート</p>
+            </div>
+            <div class="feature_3" id="show6">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              <h3>う〜ん</h3>
+              <p>きのこの山より内容量が少なめ</p>
+            </div>
+          </div>
+          <div class="select">
+            <h1 id="hide_text2">君はどっちが<span id="suki">スキ</span>？</h1>
+            <button id="btn29">ブラックサンダー</button>
+            <button id="btn30">スニッカーズ</button>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
