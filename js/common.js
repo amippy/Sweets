@@ -1,4 +1,4 @@
-/*ボタン　イベント　
+/*ボタンイベント
 $('#btn').click(function(){
   $('').slideDown();
 });
@@ -8,10 +8,10 @@ $('#btn').click(function(){
 
 $(function(){
 
-/*　selectの文言表示*/
+/*selectの文言表示*/
   $('#hide_text').fadeIn(14000); $('#hide_text2').fadeIn(20000);
 
-/*　select-bg カラーランダムに変更 */
+/*select-bg カラーランダムに変更 */
 $('.select').hover(function(){
   var colors = ["#C5AAF5"," #A3CBF1"," #79BFA1"," #F5A352"," #FB7374"," #FF7182"];
   var pick = Math.floor(Math.random()*5);
@@ -21,11 +21,18 @@ $('.select').hover(function(){
   $(this).css('background-color','#f1f6e4');
 });
 
-
+$('.change_txt_color').hover(function(){
+  var colors = [" #177F75"," #21B6A8"," #CC1559"," #FF5EAA"," #96B3D3","#32B92D"," #F16745","#7BC8A4"," #4CC3D9","#93648D"," #FFEC94"," #FFBAD2"];
+  var pick = Math.floor(Math.random()*5);
+  var color = colors[pick];
+  $(this).css('color',color);
+},function(){
+  $(this).css('color','black');
+});
 
 /* */
 
-/*　ボタン　イベントクリック*/
+/*ボタンイベントクリック*/
   $('#btn1').click(function(){
     $('.kinoko').slideDown();
   });
