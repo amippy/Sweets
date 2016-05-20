@@ -1,4 +1,7 @@
 @charset "UTF-8";
+
+/* Base
+------------------------------------------------------------- */
 html,body{
   margin: 0px;
   padding: 0px;
@@ -17,11 +20,23 @@ li{
  background-size: cover;
 }
 
-.kinoko,.takenoko,.pockey,.toppo,.jagariko,.jagabee
+#first_show_contents,.kinoko,.takenoko,.pockey,.toppo,.jagariko,.jagabee
 ,.chipstar,.pringles,.calbee,.koikeya,.almond,.macadamia
-,.apolo,.marble{
+,.apolo,.marble,#last{
   display: none;
 }
+
+/*header
+------------------------------------------------- */
+header img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+
+/* Contents
+------------------------------------------------------------------------ */
 
 .snack_name{
   background-color:#F7F7F7;
@@ -31,15 +46,13 @@ li{
   animation-name: swing;
   animation-duration: 2s;
   animation-delay: .45s;
-}
-
-.snack_name h2{
-
+  font-size: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .snack_name i{
   font-size: 70px;
-
 }
 
 .snack_name:after{
@@ -66,13 +79,6 @@ li{
   width: 33%;
   margin-top: 13px;
 
-}
-
-
-.snack_name h2{
-  font-size: 100px;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .snack_name ul{
@@ -127,19 +133,19 @@ li{
   margin-bottom: 30px;
 }
 
-.select{
-  background-color: #f1f6e4;
-  text-align: center;
-  padding: 250px;
-
-}
-
-#suki{
+.suki{
   color: #FF2D55;
 }
 
 #hide_text{
   display: none;
+}
+/* select
+---------------------------------------------------------- */
+.select{
+  background-color: #f1f6e4;
+  text-align: center;
+  padding: 250px;
 }
 
 .select h1{
@@ -165,7 +171,47 @@ li{
   cursor: pointer;
 }
 
-/*スマホ対応*/
+/* last
+------------------------------------------------------------------------ */
+#last{
+  text-align: center;
+}
+
+#last h1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#getResult{
+	background: #EEE;
+	border-top: 5px solid #C00;
+	border-left: 5px solid #09C;
+	border-right: 5px solid #9C0;
+	border-bottom: 5px solid #FC0;
+	color:#111;
+	width: 100px;
+	padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+#name{
+  border: 2px solid pink;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+#result{
+  margin-bottom: 200px;
+}
+
+#tweet{
+  margin-bottom: 200px;
+}
+
+
+/*スマホ対応
+---------------------------------------------------------------------------*/
 @media (max-width:480px){
 
   .snack_name i{
@@ -220,7 +266,8 @@ li{
 
 }
 
-/*タブレット対応*/
+/*タブレット対応
+----------------------------------------------------------------*/
 @media (max-width:768px){
   .select{
     padding: 20px;
