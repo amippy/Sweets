@@ -31,7 +31,7 @@ li{
 header img{
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
 }
 
 
@@ -213,6 +213,16 @@ header img{
 /*スマホ対応
 ---------------------------------------------------------------------------*/
 @media (max-width:480px){
+
+  body{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #9bf2d6), color-stop(0.00, #d5def6));
+background: -webkit-linear-gradient(top, #d5def6 0%, #9bf2d6 100%);
+background: -moz-linear-gradient(top, #d5def6 0%, #9bf2d6 100%);
+background: -o-linear-gradient(top, #d5def6 0%, #9bf2d6 100%);
+background: -ms-linear-gradient(top, #d5def6 0%, #9bf2d6 100%);
+background: linear-gradient(top, #d5def6 0%, #9bf2d6 100%);
+
+  }
 
   .snack_name i{
     font-size: 35px;
