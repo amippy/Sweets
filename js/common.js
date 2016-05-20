@@ -1,4 +1,4 @@
-/*ボタンイベント
+/*ボタン　イベント　
 $('#btn').click(function(){
   $('').slideDown();
 });
@@ -8,10 +8,12 @@ $('#btn').click(function(){
 
 $(function(){
 
-/*selectの文言表示*/
+/*　selectの文言表示
+-----------------------------------------------------------------------------------*/
   $('#hide_text').fadeIn(14000); $('#hide_text2').fadeIn(20000);
 
-/*select-bg カラーランダムに変更 */
+/*　select-bg & textカラーランダムに変更
+---------------------------------------------------------------------------------------*/
 $('.select').hover(function(){
   var colors = ["#C5AAF5"," #A3CBF1"," #79BFA1"," #F5A352"," #FB7374"," #FF7182"];
   var pick = Math.floor(Math.random()*5);
@@ -30,9 +32,40 @@ $('.change_txt_color').hover(function(){
   $(this).css('color','black');
 });
 
-/* */
+/* last
+--------------------------------------------------------------------　*/
+  $('#getResult').click(function(){
+    var name = $('#name').val();  //好きなお菓子取得
 
-/*ボタンイベントクリック*/
+    if(name == ""){
+      alert("1番スキなお菓子を入力してください！");
+      return;
+    }
+
+    var hogehoge = ["ママ","パパ","おじいちゃん","おばあちゃん","おじさん","おばさん","お金","セクシーダンサー","マッチョボーイ"];
+
+    var hoge = hogehoge[Math.floor(Math.random() * hogehoge.length)];
+
+    var result = "実は・・・わたしは、「" + name + "」よりも「" + hoge + "」が大好きです！！！" ;
+    $('#result').text(result);
+
+    //twitter
+    var tweetLink = "<a href='https://twitter.com/intent/tweet?text="
+      + encodeURIComponent(result) +" &hashtags=aminoWebSiteTestingNow' target='_blank'>ツイートする</a>";
+      $("#tweet").html(tweetLink);
+
+
+  });
+
+/*　ボタン　イベントクリック
+----------------------------------------------------------------------------------------*/
+
+
+  $('#header_click').click(function(){
+    $('#first_show_contents').show();
+  });
+
+
   $('#btn1').click(function(){
     $('.kinoko').slideDown();
   });
@@ -89,9 +122,8 @@ $('.change_txt_color').hover(function(){
     $('.marble').slideDown();
   });
 
-
-
-
-
+  $('.btn_last').click(function(){
+    $('#last').slideDown();
+  });
 
 });
